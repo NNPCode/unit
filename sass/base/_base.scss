@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%; /* sticky footer */
+}
+
+body {
+	height: 100%; /* sticky footer */
+	display: flex; /* sticky footer */
+	flex-direction: column; /* sticky footer */
+    font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	color: $textColor;
+}
+
+body > * {
+	flex-shrink: 0; /* sticky footer */
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.none {
+	display: none !important;
+}
+
+.footer {
+	margin-top: auto; /* sticky footer */
+	
+}
+
+input, textarea, button {
+	font-family: inherit;
+	padding: 0;
+}

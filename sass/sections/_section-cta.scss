@@ -1,0 +1,22 @@
+.section-cta {
+    padding-top: 83px;
+    padding-bottom: 84px;
+
+    @include bgImage("./../img/bg/cta-bg.jpg");
+
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.section-cta__title {
+    margin-bottom: 40px;
+
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1;
+
+    span {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}

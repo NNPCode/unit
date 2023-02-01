@@ -1,0 +1,44 @@
+.section-tasks {
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.section-tasks__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 114px;
+}
+
+.section-tasks__content {
+    width: 570px;
+}
+
+.section-tasks__header {
+    margin-bottom: 30px;
+}
+
+.section-tasks__title {
+    margin-bottom: 30px;
+}
+
+.section-tasks__description {
+    width: 400px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.1;
+    
+    color: #808080;
+
+    p:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.section-tasks__img {
+
+}
