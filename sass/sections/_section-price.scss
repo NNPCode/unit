@@ -1,8 +1,18 @@
 .section-price {
+    position: relative;
     padding-top: 90px;
     padding-bottom: 100px;
 
-    @include bgImage("./../img/bg/price-bg.jpg")
+    @include bgImage("./../img/bg/price-bg.jpg");
+
+    &::before {
+        @extend %overlay;
+    }
+}
+
+.section-price__content {
+    position: relative;
+    z-index: 9;
 }
 
 .section-price__header {

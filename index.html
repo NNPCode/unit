@@ -90,9 +90,11 @@
     </section>
 
     <section class="section-cta">
-        <div class="container">
-            <h2 class="section-cta__title">Начните использовать <span>ЮНИТ</span> уже сегодня.</h2>
-            <button class="button">подключить</button>
+        <div class="section-cta__contant">
+            <div class="container">
+                <h2 class="section-cta__title">Начните использовать <span>ЮНИТ</span> уже сегодня.</h2>
+                <a href="#price" class="button">подключить</a>
+            </div>
         </div>
     </section>
 
@@ -134,75 +136,77 @@
         </div>
     </section>
 
-    <section class="section-price">
-        <div class="container">
-            <header class="section-price__header">
-                <div class="section-price__title">
-                    <h2 class="title title--white">Цены</h2>
+    <section class="section-price" id="price">
+        <div class="section-price__content">
+            <div class="container">
+                <header class="section-price__header">
+                    <div class="section-price__title">
+                        <h2 class="title title--white">Цены</h2>
+                    </div>
+                    <div class="section-price__subtitle">
+                        <h3 class="subtitle subtitle--white">Выберите подходящий план</h3>
+                    </div>
+                </header>
+    
+                <div class="section-price__row">
+                    <!-- Product -->
+                    <div class="product">
+                        <div class="product__header">
+                            <h4 class="product__title">Базовый</h4>
+                            <div class="product__price">15</div>
+                            <div class="product__period">$/мес</div>
+                        </div>
+                        <ul class="product__list">
+                            <li>10 проектов</li>
+                            <li>5 участников</li>
+                            <li>∞ количество задач</li>
+                            <li>5 GB медиа хранилище</li>
+                            <li>Поддержка по Email</li>
+                        </ul>
+                        <div class="product__button">
+                            <button class="button-outline">Выбрать</button>
+                        </div>
+                    </div>
+                    <!-- /Product -->
+                     <!-- Product -->
+                     <div class="product product--special">
+                        <div class="product__header">
+                            <h4 class="product__title">стандарт</h4>
+                            <div class="product__price">65</div>
+                            <div class="product__period">$/мес</div>
+                        </div>
+                        <ul class="product__list">
+                            <li>50 проектов</li>
+                            <li>10 участников</li>
+                            <li>∞ количество задач</li>
+                            <li>25 GB медиа хранилище</li>
+                            <li>Поддержка по Email</li>
+                        </ul>
+                        <div class="product__button">
+                            <button class="button-solid">Выбрать</button>
+                        </div>
+                    </div>
+                    <!-- /Product -->
+                     <!-- Product -->
+                     <div class="product">
+                        <div class="product__header">
+                            <h4 class="product__title">премиум</h4>
+                            <div class="product__price">125</div>
+                            <div class="product__period">$/мес</div>
+                        </div>
+                        <ul class="product__list">
+                            <li>100 проектов</li>
+                            <li>30 участников</li>
+                            <li>∞ количество задач</li>
+                            <li>50 GB медиа хранилище</li>
+                            <li>Поддержка по Email</li>
+                        </ul>
+                        <div class="product__button">
+                            <button class="button-outline">Выбрать</button>
+                        </div>
+                    </div>
+                    <!-- /Product -->
                 </div>
-                <div class="section-price__subtitle">
-                    <h3 class="subtitle subtitle--white">Выберите подходящий план</h3>
-                </div>
-            </header>
-
-            <div class="section-price__row">
-                <!-- Product -->
-                <div class="product">
-                    <div class="product__header">
-                        <h4 class="product__title">Базовый</h4>
-                        <div class="product__price">15</div>
-                        <div class="product__period">$/мес</div>
-                    </div>
-                    <ul class="product__list">
-                        <li>10 проектов</li>
-                        <li>5 участников</li>
-                        <li>∞ количество задач</li>
-                        <li>5 GB медиа хранилище</li>
-                        <li>Поддержка по Email</li>
-                    </ul>
-                    <div class="product__button">
-                        <button class="button-outline">Выбрать</button>
-                    </div>
-                </div>
-                <!-- /Product -->
-                 <!-- Product -->
-                 <div class="product product--special">
-                    <div class="product__header">
-                        <h4 class="product__title">стандарт</h4>
-                        <div class="product__price">65</div>
-                        <div class="product__period">$/мес</div>
-                    </div>
-                    <ul class="product__list">
-                        <li>50 проектов</li>
-                        <li>10 участников</li>
-                        <li>∞ количество задач</li>
-                        <li>25 GB медиа хранилище</li>
-                        <li>Поддержка по Email</li>
-                    </ul>
-                    <div class="product__button">
-                        <button class="button-solid">Выбрать</button>
-                    </div>
-                </div>
-                <!-- /Product -->
-                 <!-- Product -->
-                 <div class="product">
-                    <div class="product__header">
-                        <h4 class="product__title">премиум</h4>
-                        <div class="product__price">125</div>
-                        <div class="product__period">$/мес</div>
-                    </div>
-                    <ul class="product__list">
-                        <li>100 проектов</li>
-                        <li>30 участников</li>
-                        <li>∞ количество задач</li>
-                        <li>50 GB медиа хранилище</li>
-                        <li>Поддержка по Email</li>
-                    </ul>
-                    <div class="product__button">
-                        <button class="button-outline">Выбрать</button>
-                    </div>
-                </div>
-                <!-- /Product -->
             </div>
         </div>
     </section>
@@ -217,10 +221,16 @@
             <div class="section-clients__slider">
                 <div class="slider">
                         <button class="slider__arrow slider__arrow--left">
-                            <img src="./img/arrow-left.svg" alt="arrow-left">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 12H4" stroke="#00C470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 18L4 12L10 6" stroke="#00C470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                         </button>
                         <button class="slider__arrow slider__arrow--rigth">
-                            <img src="./img/arrow-right.svg" alt="arrow-right">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 12H20" stroke="#00C470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 6L20 12L14 18" stroke="#00C470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                         </button>
                     <!-- slider-item -->
                     <div class="slider-item">
@@ -259,7 +269,7 @@
                 </div>
             </div>
             <div class="footer__copyright">
-                <p>Копирайт © 2019 ЮНИТ. Все права защищены.</p>
+                <p>Копирайт &#169; 2019 ЮНИТ. Все права защищены.</p>
             </div>
         </div>
     </footer>

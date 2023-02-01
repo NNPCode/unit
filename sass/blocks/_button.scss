@@ -8,13 +8,15 @@
 
     font-weight: 800;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 60px;
     letter-spacing: 4px;
     text-transform: uppercase;
 
     color: #FFFFFF;
 
     cursor: pointer;
+
+    transition: .4s ease-in;
 
     &:hover {
         background-color: #00a55e;
@@ -25,3 +27,4 @@
         background-color: #01864d;
     }
 }
+

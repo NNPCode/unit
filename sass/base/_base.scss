@@ -6,6 +6,7 @@
 
 html {
 	height: 100%; /* sticky footer */
+	scroll-behavior: smooth;
 }
 
 body {
@@ -52,11 +53,6 @@ ul {
 
 .none {
 	display: none !important;
-}
-
-.footer {
-	margin-top: auto; /* sticky footer */
-	
 }
 
 input, textarea, button {

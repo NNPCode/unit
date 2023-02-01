@@ -1,3 +1,13 @@
+.header::before, .section-cta::before, .section-price::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
 *,
 *::before,
 *::after {
@@ -8,6 +18,7 @@
 html {
   height: 100%;
   /* sticky footer */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -66,11 +77,6 @@ ul {
   display: none !important;
 }
 
-.footer {
-  margin-top: auto;
-  /* sticky footer */
-}
-
 input, textarea, button {
   font-family: inherit;
   padding: 0;
@@ -92,6 +98,8 @@ input, textarea, button {
   background-color: #fff;
   border: none;
   cursor: pointer;
+  -webkit-transition: .4s ease-in;
+  transition: .4s ease-in;
 }
 
 .button-round:hover {
@@ -142,11 +150,13 @@ input, textarea, button {
   border: none;
   font-weight: 800;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 60px;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
+  -webkit-transition: .4s ease-in;
+  transition: .4s ease-in;
 }
 .button:hover {
   background-color: #00a55e;
@@ -304,6 +314,8 @@ input, textarea, button {
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
+  -webkit-transition: .4s ease-in;
+  transition: .4s ease-in;
 }
 .button-outline:hover {
   background-color: rgba(255, 255, 255, 0.2);
@@ -328,6 +340,8 @@ input, textarea, button {
   text-transform: uppercase;
   color: #2E2E2E;
   cursor: pointer;
+  -webkit-transition: .4s ease-in;
+  transition: .4s ease-in;
 }
 .button-solid:hover {
   background-color: #000;
@@ -366,6 +380,8 @@ input, textarea, button {
   background: #F5F5F5;
   border: none;
   cursor: pointer;
+  -webkit-transition: .4s ease-in;
+  transition: .4s ease-in;
 }
 .slider__arrow--left {
   top: 53px;
@@ -378,6 +394,12 @@ input, textarea, button {
   right: -46px;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+}
+.slider__arrow:hover {
+  background-color: #00C470;
+}
+.slider__arrow:hover path {
+  stroke: white;
 }
 
 .slider-item {
@@ -394,7 +416,8 @@ input, textarea, button {
 }
 
 .slider-item__text {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  padding: 0 5px;
   font-weight: 500;
   font-size: 18px;
   line-height: 2;
@@ -439,6 +462,7 @@ input, textarea, button {
 }
 
 .header {
+  position: relative;
   height: 870px;
   background-image: url("./../img/bg/header-bg.jpg");
   background-position: center;
@@ -516,6 +540,7 @@ input, textarea, button {
 }
 
 .section-cta {
+  position: relative;
   padding-top: 83px;
   padding-bottom: 84px;
   background-image: url("./../img/bg/cta-bg.jpg");
@@ -523,6 +548,16 @@ input, textarea, button {
   background-size: cover;
   text-align: center;
   color: #FFFFFF;
+}
+
+.section-cta__contant {
+  position: relative;
+  z-index: 9;
+}
+
+.section-cta__contant .button {
+  display: inline-block;
+  text-decoration: none;
 }
 
 .section-cta__title {
@@ -650,11 +685,17 @@ input, textarea, button {
 }
 
 .section-price {
+  position: relative;
   padding-top: 90px;
   padding-bottom: 100px;
   background-image: url("./../img/bg/price-bg.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.section-price__content {
+  position: relative;
+  z-index: 9;
 }
 
 .section-price__header {
@@ -724,6 +765,8 @@ input, textarea, button {
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
+  -webkit-transition: .4s ease-in;
+  transition: .4s ease-in;
 }
 .footer__nav-item:last-child {
   margin-right: 0;
@@ -754,6 +797,8 @@ input, textarea, button {
   height: 48px;
   border-radius: 50%;
   background: rgba(196, 196, 196, 0.1);
+  -webkit-transition: .4s ease-in;
+  transition: .4s ease-in;
 }
 .footer__social-item:hover {
   background-color: #00c470;

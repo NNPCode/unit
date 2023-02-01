@@ -20,6 +20,8 @@
     border: none;
     cursor: pointer;
 
+    transition: .4s ease-in;
+
     &--left {
         top: 53px;
         left: -46px;
@@ -31,6 +33,14 @@
         right: -46px;
         transform: translateX(100%);
     }
+
+    &:hover {
+        background-color: #00C470;
+    }
+
+    &:hover path {
+        stroke: white;
+    }
 }
 
 .slider-item {
@@ -40,7 +50,8 @@
 }
 
 .slider-item__text {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    padding: 0 5px;
 
     font-weight: 500;
     font-size: 18px;
