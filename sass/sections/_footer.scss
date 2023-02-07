@@ -116,7 +116,13 @@
 .footer__copyright {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1;
     text-align: center;
     color: rgba(255, 255, 255, 0.3);
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding: 0 50px;   
+        line-height: 1.5;
+    }
 }

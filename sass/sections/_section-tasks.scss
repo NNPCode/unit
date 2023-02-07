@@ -40,6 +40,7 @@
     @media (max-width: 899px) {
        flex-direction: row-reverse;
        padding-left: 0;
+       align-items: flex-start;
     }
 
     /* Mobile XS */
@@ -55,17 +56,21 @@
     /* Tablet */
     @media (max-width: 1199px) {
         width: 495px;
+        padding-bottom: 10px;
     }
 
     /* Mobile */
     @media (max-width: 899px) {
        width: 270px;
+       padding-bottom: 0;
+       padding-top: 8px;
     }
 
     /* Mobile XS */
     @media (max-width: 599px) {
-       width: 290px;
+       width: 100%;
        text-align: center;
+       padding-top: 0;
     }
 }
 

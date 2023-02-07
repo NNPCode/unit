@@ -119,6 +119,20 @@ input, textarea, button {
   font-size: 14px;
   line-height: 1.2;
   color: #fff;
+  /* Mobile */
+  /* Mobile XS */
+}
+@media (max-width: 899px) {
+  .input {
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+}
+@media (max-width: 599px) {
+  .input {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 }
 
 .input::-webkit-input-placeholder {
@@ -243,7 +257,8 @@ input, textarea, button {
 @media (max-width: 1199px) {
   .card__title {
     margin-bottom: 10px;
-    min-height: 32px;
+    min-height: 48px;
+    line-height: 1.5;
   }
 }
 @media (max-width: 899px) {
@@ -555,6 +570,7 @@ input, textarea, button {
   .slider-item__text {
     font-size: 16px;
     margin-bottom: 20px;
+    padding: 0;
   }
 }
 @media (max-width: 599px) {
@@ -1086,6 +1102,9 @@ input, textarea, button {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     padding-left: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 @media (max-width: 599px) {
@@ -1108,17 +1127,21 @@ input, textarea, button {
 @media (max-width: 1199px) {
   .section-tasks__content {
     width: 495px;
+    padding-bottom: 10px;
   }
 }
 @media (max-width: 899px) {
   .section-tasks__content {
     width: 270px;
+    padding-bottom: 0;
+    padding-top: 8px;
   }
 }
 @media (max-width: 599px) {
   .section-tasks__content {
-    width: 290px;
+    width: 100%;
     text-align: center;
+    padding-top: 0;
   }
 }
 
@@ -1249,6 +1272,7 @@ input, textarea, button {
 @media (max-width: 599px) {
   .section-focus__img {
     width: 100%;
+    margin-bottom: 10px;
   }
   .section-focus__img img {
     max-width: 100%;
@@ -1295,12 +1319,13 @@ input, textarea, button {
 @media (max-width: 1199px) {
   .section-focus__content {
     width: 420px;
-    padding-top: 12px;
+    padding-top: 20px;
   }
 }
 @media (max-width: 899px) {
   .section-focus__content {
     width: 370px;
+    padding-top: 0;
   }
 }
 @media (max-width: 599px) {
@@ -1709,9 +1734,16 @@ input, textarea, button {
 .footer__copyright {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1;
   text-align: center;
   color: rgba(255, 255, 255, 0.3);
+  /* Mobile XS */
+}
+@media (max-width: 599px) {
+  .footer__copyright {
+    padding: 0 50px;
+    line-height: 1.5;
+  }
 }
 
 /* Tablet */
