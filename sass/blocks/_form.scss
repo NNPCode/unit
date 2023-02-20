@@ -1,5 +1,4 @@
 .input {
-    // width: 240px;
     display: block;
     height: 60px;
     padding-left: 30px;
@@ -15,6 +14,7 @@
 
     /* Mobile */
     @media (max-width: 899px) {
+        width: 100%;
         padding-left: 46px;
         padding-right: 46px;
     }

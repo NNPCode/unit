@@ -124,6 +124,7 @@ input, textarea, button {
 }
 @media (max-width: 899px) {
   .input {
+    width: 100%;
     padding-left: 46px;
     padding-right: 46px;
   }
@@ -782,7 +783,7 @@ input, textarea, button {
   margin-bottom: 70px;
   font-weight: 700;
   font-size: 20px;
-  line-height: auto;
+  line-height: 1.2;
   /* Tablet */
   /* Mobile */
   /* Mobile XS */
@@ -846,16 +847,6 @@ input, textarea, button {
   .header__form > * + * {
     margin-left: 0;
     margin-top: 20px;
-  }
-}
-
-.header__form-input {
-  width: 240px;
-  /* Mobile */
-}
-@media (max-width: 899px) {
-  .header__form-input {
-    width: 100%;
   }
 }
 
