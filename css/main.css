@@ -964,24 +964,42 @@ input, textarea, button {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(46, 46, 46, 0.5);
+  /* Mobile XS */
 }
 .header-search-form--input:-ms-input-placeholder {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(46, 46, 46, 0.5);
+  /* Mobile XS */
 }
 .header-search-form--input::-ms-input-placeholder {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(46, 46, 46, 0.5);
+  /* Mobile XS */
 }
 .header-search-form--input::placeholder {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(46, 46, 46, 0.5);
+  /* Mobile XS */
+}
+@media (max-width: 455px) {
+  .header-search-form--input::-webkit-input-placeholder {
+    font-size: 11px;
+  }
+  .header-search-form--input:-ms-input-placeholder {
+    font-size: 11px;
+  }
+  .header-search-form--input::-ms-input-placeholder {
+    font-size: 11px;
+  }
+  .header-search-form--input::placeholder {
+    font-size: 11px;
+  }
 }
 .header-search-form--input:focus-visible {
   outline: none;
@@ -991,6 +1009,19 @@ input, textarea, button {
   padding-left: 30px;
   padding-right: 70px;
   opacity: 1;
+  /* Mobile XS */
+}
+@media (max-width: 599px) {
+  .header-search-form--input-active {
+    width: 340px;
+  }
+}
+@media (max-width: 455px) {
+  .header-search-form--input-active {
+    width: 225px;
+    padding-left: 10px;
+    padding-right: 65px;
+  }
 }
 
 .section-cta {

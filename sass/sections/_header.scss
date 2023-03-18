@@ -211,6 +211,11 @@
          line-height: 1.25;
 
          color: rgba(46, 46, 46, 0.5);
+
+          /* Mobile XS */
+          @media (max-width: 455px) {
+            font-size: 11px;
+         }
       }
 
       &:focus-visible{
@@ -222,6 +227,17 @@
          padding-left: 30px;
          padding-right: 70px;
          opacity: 1;
+
+         /* Mobile XS */
+         @media (max-width: 599px) {
+            width: 340px;
+         }
+
+         @media (max-width: 455px) {
+            width: 225px;
+            padding-left: 10px;
+            padding-right: 65px;
+         }
       }
    }
 }
