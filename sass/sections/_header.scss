@@ -186,3 +186,42 @@
        margin-top: 20px;
     }
 }
+
+/* Search form */
+
+.header-search-form{
+   position: relative;
+   &--input{
+      width: 0;
+      height: 60px;
+
+      border-radius: 30px;
+      border: none;
+      opacity: 0;
+
+      transition: .5s ease-in;
+
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.25;
+
+      &::placeholder{
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 1.25;
+
+         color: rgba(46, 46, 46, 0.5);
+      }
+
+      &:focus-visible{
+         outline: none;
+      }
+
+      &-active{
+         width: 340px;
+         padding-left: 30px;
+         padding-right: 70px;
+         opacity: 1;
+      }
+   }
+}

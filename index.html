@@ -19,12 +19,18 @@
     <header class="header">
         <div class="header__wrapper">
                 <div class="header__buttons">
-                    <button class="button-round">
-                        <img src="./img/header/nav.svg" alt="Nav button">
+                    <button class="button-round" id="navigation">
+                        <div class="nav-button-middle"></div>
                     </button>
-                    <button class="button-round">
-                        <img src="./img/header/search.svg" alt="Search button">
-                    </button>
+                    <form class="header-search-form">
+                        <input type="text" class="header-search-form--input" placeholder="Введите текст для поиска"> 
+                        <button class="button-round" id="search" type="button">
+                            <svg class="header-search" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70001 13.2C10.7376 13.2 13.2 10.7375 13.2 7.69995C13.2 4.66239 10.7376 2.19995 7.70001 2.19995C4.66245 2.19995 2.20001 4.66239 2.20001 7.69995C2.20001 10.7375 4.66245 13.2 7.70001 13.2Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.8 18.4L11.2 12" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </button>
+                    </form>
                 </div>
             <div class="container header__content">
                 <h1 class="header__title">ЮНИТ</h1>
@@ -276,5 +282,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>

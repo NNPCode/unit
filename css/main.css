@@ -102,9 +102,102 @@ input, textarea, button {
   -webkit-transition: .4s ease-in;
   transition: .4s ease-in;
 }
+.button-round--active-nav .nav-button-middle {
+  background-color: unset;
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+}
+.button-round--active-nav .nav-button-middle::before {
+  content: "";
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: top .3s ease-in, -webkit-transform .3s ease-in .3s;
+  transition: top .3s ease-in, -webkit-transform .3s ease-in .3s;
+  transition: top .3s ease-in, transform .3s ease-in .3s;
+  transition: top .3s ease-in, transform .3s ease-in .3s, -webkit-transform .3s ease-in .3s;
+}
+.button-round--active-nav .nav-button-middle::after {
+  content: "";
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: top .3s ease-in, -webkit-transform .3s ease-in .3s;
+  transition: top .3s ease-in, -webkit-transform .3s ease-in .3s;
+  transition: top .3s ease-in, transform .3s ease-in .3s;
+  transition: top .3s ease-in, transform .3s ease-in .3s, -webkit-transform .3s ease-in .3s;
+}
+.button-round--active-search {
+  background-color: #15D784;
+}
+.button-round--active-search .header-search path {
+  stroke: white;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+#search {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
 .button-round:hover {
   background-color: #00C470;
+}
+.button-round:hover .nav-button-middle {
+  background-color: #ffffff;
+}
+.button-round:hover .nav-button-middle::before, .button-round:hover .nav-button-middle::after {
+  background-color: #ffffff;
+}
+.button-round:hover.button-round.button-round--active-nav .nav-button-middle {
+  background-color: transparent;
+}
+.button-round:hover .header-search path {
+  stroke: white;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.nav-button-middle {
+  position: relative;
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #000000;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+.nav-button-middle::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #000000;
+  -webkit-transition: top .3s ease-in, background-color .3s ease-in, -webkit-transform .3s ease-in .3s;
+  transition: top .3s ease-in, background-color .3s ease-in, -webkit-transform .3s ease-in .3s;
+  transition: top .3s ease-in, transform .3s ease-in .3s, background-color .3s ease-in;
+  transition: top .3s ease-in, transform .3s ease-in .3s, background-color .3s ease-in, -webkit-transform .3s ease-in .3s;
+}
+.nav-button-middle::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #000000;
+  -webkit-transition: top .3s ease-in, background-color .3s ease-in, -webkit-transform .3s ease-in .3s;
+  transition: top .3s ease-in, background-color .3s ease-in, -webkit-transform .3s ease-in .3s;
+  transition: top .3s ease-in, transform .3s ease-in .3s, background-color .3s ease-in;
+  transition: top .3s ease-in, transform .3s ease-in .3s, background-color .3s ease-in, -webkit-transform .3s ease-in .3s;
 }
 
 .input {
@@ -848,6 +941,56 @@ input, textarea, button {
     margin-left: 0;
     margin-top: 20px;
   }
+}
+
+/* Search form */
+.header-search-form {
+  position: relative;
+}
+.header-search-form--input {
+  width: 0;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  opacity: 0;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.header-search-form--input::-webkit-input-placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(46, 46, 46, 0.5);
+}
+.header-search-form--input:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(46, 46, 46, 0.5);
+}
+.header-search-form--input::-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(46, 46, 46, 0.5);
+}
+.header-search-form--input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(46, 46, 46, 0.5);
+}
+.header-search-form--input:focus-visible {
+  outline: none;
+}
+.header-search-form--input-active {
+  width: 340px;
+  padding-left: 30px;
+  padding-right: 70px;
+  opacity: 1;
 }
 
 .section-cta {
